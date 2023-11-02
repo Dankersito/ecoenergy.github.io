@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de Precios de Viviendas</title>
+    <link rel="stylesheet" href="viv.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/">Inicio</a>
+        <a href="index.html#nuestro-producto">Nuestro producto</a>
+        <a href="index.html#portafolio">Portafolio</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="viviendas.html">Viviendas</a>
+        <a href="./login.html">Login</a>
+      </nav>
+      <section class="textos-header">
+        <h1>Construyendo tus mejores sueños</h1>
+        <h2>Con una página web poderosa</h2>
+      </section>
+      <div class="wave" style="height: 150px; overflow: hidden">
+        <svg
+          viewBox="0 0 500 150"
+          preserveAspectRatio="none"
+          style="height: 100%; width: 100%"
+        >
+          <path
+            d="M0.00,49.98 C149.99,150.00 351.49,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: none; fill: #fff"
+          ></path>
+        </svg>
+      </div>
+    </header>
+    <body>
+      <h1>Cotizador de Viviendas</h1>
+      <form id="cotizacion-form">
+          <label for="metros-cuadrados">Metros Cuadrados:</label>
+          <select id="metros-cuadrados">
+              <option value="60">60 m2</option>
+              <option value="90">90 m2</option>
+              <option value="120">120 m2</option>
+          </select>
+  
+          <label for="zona">Zona:</label>
+          <select id="zona">
+              <option value="Zona Superior">Zona Superior</option>
+              <option value="Zona Interm">Zona Interm</option>
+              <option value="Zona Baja">Zona Baja</option>
+          </select>
+  
+          <label for="calidad">Calidad en la Construcción:</label>
+          <select id="calidad">
+              <option value="Lujo">Lujo</option>
+              <option value="Moderada">Moderada</option>
+              <option value="Regular">Regular</option>
+          </select>
+  
+          <label for="niveles">Cantidad de Niveles:</label>
+          <select id="niveles">
+              <option value="Dos">Dos</option>
+              <option value="Tres">Tres</option>
+              <option value="Tres con Ático">Tres con Ático</option>
+          </select>
+  
+          <label for="accesorios-piso">Accesorios de Piso:</label>
+          <select id="accesorios-piso">
+              <option value="Ladrillo">Ladrillo</option>
+              <option value="Madera">Madera</option>
+              <option value="Cerámicos">Cerámicos</option>
+              <option value="Mármol">Mármol</option>
+              <option value="Granito">Granito</option>
+              <option value="Porcelanato">Porcelanato</option>
+              <option value="Alfombra">Alfombra</option>
+              <option value="Vinilo">Vinilo</option>
+              <option value="Flotantes">Flotantes</option>
+              <option value="Mosaicos">Mosaicos</option>
+          </select>          
+  
+          <label for="accesorios-paredes">Accesorios de Paredes:</label>
+          <select id="accesorios-paredes">
+              <option value="Rústico">Rústico</option>
+              <option value="Pintura">Pintura</option>
+              <option value="Refuerzo">Refuerzo</option>
+          </select>
+          
+          <label for="accesorios-griferia">Accesorios de Grifería:</label>
+          <select id="accesorios-griferia">
+              <option value="Moderada">Moderada</option>
+              <option value="Media">Media</option>
+              <option value="Lujo">Lujo</option>
+          </select>
+          
+          <label for="accesorios-ventanas">Accesorios de Ventanas:</label>
+          <select id="accesorios-ventanas">
+              <option value="Gama normal">Gama normal</option>
+              <option value="Gama alta">Gama alta</option>
+          </select>
+          
+          <label for="accesorios-muebles">Accesorios de Muebles:</label>
+          <select id="accesorios-muebles">
+              <option value="Biblioteca">Biblioteca</option>
+              <option value="Mesa auxiliar cocina">Mesa auxiliar cocina</option>
+              <option value="Repisa TV. Sala">Repisa TV. Sala</option>
+              <option value="Gabinete cocina">Gabinete cocina</option>
+              <option value="Tendedero prendas">Tendedero prendas</option>
+              <option value="Para el baño">Para el baño</option>
+          </select>
+          
+  
+          <label for="distribucion">Distribución:</label>
+          <select id="distribucion">
+              <option value="Interior">Interior</option>
+              <option value="Exterior Amanecer">Exterior Amanecer</option>
+              <option value="Exterior Atardecer">Exterior Atardecer</option>
+              <option value="Exterior Sombra">Exterior Sombra</option>
+          </select>
+  
+          <button type="button" id="calcular-btn">Calcular Precio</button>
+      </form>
+  
+      <div id="resultado">
+          <p>Precio Final de Venta: <span id="precio-final">$0</span></p>
+          <p>Variación en Pesos: <span id="variacion-pesos">$0</span></p>
+          <p>Variación en Porcentaje: <span id="variacion-porcentaje">0%</span></p>
+      </div>
+  
+    <footer id="contacto">
+      <div class="contenedor-footer">
+        <div class="content-foo">
+          <h4>Phone</h4>
+          <p>8983823</p>
+        </div>
+        <div class="content-foo">
+          <h4>Email</h4>
+          <p>ejemplo@gmail.com</p>
+        </div>
+        <div class="content-foo">
+          <h4>Location</h4>
+          <p>carrera 8 #71-30</p>
+        </div>
+      </div>
+      <h2 class="titulo-final">&copy; Kelman Bermudez | Santiago Mendez</h2>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
